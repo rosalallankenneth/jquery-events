@@ -1,0 +1,149 @@
+/* styles for slide 1 */
+section h1 {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: rgb(0, 174, 255);
+}
+#btn-error {
+  background: rgb(209, 2, 2);
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 16px;
+  border: none;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#btn-error:hover {
+  background: rgb(172, 14, 14);
+}
+#modal-error {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transform: translateX(150%);
+  padding: 10px;
+  background: #fff;
+  text-align: right;
+  border-radius: 3px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+#modal-error p {
+  color: rgb(209, 2, 2);
+}
+#modal-error button {
+  padding: 5px 10px;
+  color: #000;
+  margin-left: 5px;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* styles for slide 2 */
+#section-2 div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+#section-2 div img {
+  width: 100px;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* styles for slide 3 */
+#section-3 nav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px #aaa solid;
+  overflow: hidden;
+}
+nav .nav-banner {
+  padding: 10px 20px;
+  background: #ccc;
+  color: #000;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin: 0;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+ul li:hover {
+  padding: 10px 30px;
+}
+
+/* styles for slide 4 */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+form label {
+  margin-bottom: 10px;
+}
+form input {
+  color: #000;
+  margin-bottom: 20px;
+  padding: 8px;
+  font-size: 16px;
+}
+form input[type="submit"] {
+  background: rgb(10, 73, 209);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* styles for slide 5 */
+#section-5 h1 {
+  margin-bottom: 20px !important;
+}
+#section-5 #label-dev {
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3 ease-in-out;
+}
+#section-5 p span {
+  color: rgb(253, 194, 0);
+}
+.info-dev {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background: rgb(32, 33, 65);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+.info-dev img {
+  width: 80px;
+  margin-right: 20px;
+}
+.info-dev div p {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* styles for responsiveness */
+@media only screen and (max-width: 500px) {
+  #section-2 div img:nth-child(3) {
+    display: none;
+  }
+}
